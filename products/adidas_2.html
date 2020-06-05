@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adidas_2 </title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="shortcut icon" href="../images/shortcut.jpeg">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <!--header-->
+        <div class="row">
+         <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container" >
+                <div class="navbar-header">
+                    <button class="collapsed navbar-toggler btn custom-btn btn-icon" data-toggle="collapse" data-target="#navbar-collapsed-menu" ><i class=" fa fa-bars"></i></button>
+                    <a href="checkbox.html" class="navbar-toggler btn custom-btn btn-icon"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="../main.html" class="navbar-brand ">
+                    <img src="../images/a.png" alt="Omar Union store">
+                    </a>
+                </div>
+                <form  class="form-inline ">
+                    <input type="search" class="form-control custom-form-control" placeholder="search by name ..">
+                    <div class="dropdown categories">
+                        <a class="nav-link dropdown-toggle custom-btn" href="#" id="navbardropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            category
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown-menu">
+                            <li>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="search-category" value="men">men </label>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="search-category" value="women">women </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="search-category" value="kids">kids </label>
+                                </div>
+                            </li>
+                        </ul>
+                            
+                    </div>
+                    <button class="btn custom-btn-primary" type="submit" >search</button>
+                </form>
+                <div class="navbar-collapse collapse" id="navbar-collapsed-menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Main Page</a></li>
+                        <li class="nav-item dropdown"><a id="navbarDropdown" role="button" aria-expanded="false" data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Store </a>
+                        <ul class="dropdown-menu custom-dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Men</a></li>
+                            <li><a class="dropdown-item" href="#">Women</a></li>
+                            <li><a class="dropdown-item" href="#">Kids</a></li>
+
+                        </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Advanced Search</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                        <li class="d-none d-lg-block"><a href="checkout.html" id="btn-shopping-cart" class=" btn custom-btn btn-icon" title="shopping cart" data-toggle="tooltip" data-placement="bottom"> <!--data-placement خاصية التنسيق-->
+                            <i class="fas fa-shopping-cart"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+         </nav>
+        </div>
+        <!--end of the header-->
+
+        <!--product-->
+       
+        <div class="row">
+            <div class="container">
+
+
+                 <!--nav links-->
+                <ol class="breadcrumb custom-breadcrumb">
+                    <li><a href="../main.html">main page</a></li>
+                    <li><a href=".">men clothes</a></li>
+                    <li ><a class="active" href=".">adidas_2 shoes</a></li>
+                </ol>
+                <!--end of the nav links-->
+
+
+                <div class="col-12 borders-between">
+                    <div class="row">
+
+
+                        <!--images-->
+                        <div class="col-lg-5 offset-lg-1 col-md-9 offset-md-2 ">
+                            <div class="carousel slide" id="carousel-product-images" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../images/adidas_2.jpg" alt="front image">
+                                    </div>
+                                   
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <!--end of the images section -->
+
+                        <div class="col-lg-5">
+                               <!--the price and category and name-->
+                            <form id="form-product-selection" class="borders-between"> 
+                                <div class="row">
+                                      <div class="product-category block-100">men</div>
+                                   
+                                    <div class="clearfix block-100">
+                                        <h2 class="float-left">adidas sport shoes</h2>
+                                        <div class="float-right price large">30$</div>
+                                    </div>                                  
+                                </div>
+                                <!--finsih of the price and category and name-->
+
+
+                                <!--the product details-->
+                                <div class="row">
+                                    <p class="product-description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, animi?
+                                    </p>
+                                </div>
+                                <!--end of the product details-->
+
+                                <!--brand and stars-->
+                                <div class="row brand-and-rating">
+                                    <div class="col-6">
+                                        <div class="brand">
+                                            brand : 
+                                            <img src="../images/adidas_small.png" alt="adidas_small">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="float-right rating">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end of the brand and rating-->
+
+
+                                <!--size and color-->
+                                <div class="row size-and-color">
+                                    <div class="col-md-6">
+                                        avaliable sizes : 
+                                        <br>
+                                        <div class="product-option ">
+                                            <label>S
+                                                <input type="radio" name="size" value="m" >
+                                            </label>
+                                        </div>
+                                        <div class="product-option active">
+                                            <label>M
+                                                <input type="radio" name="size" value="sm" checked>
+                                            </label>
+                                        </div><div class="product-option">
+                                            <label>L
+                                                <input type="radio" name="size" value="l">
+                                            </label>
+                                        </div><div class="product-option">
+                                            <label>Xl
+                                                <input type="radio" name="size" value="xl">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!--end of the size-->
+                                    <div class="col-md-6">
+                                        avalable colors : 
+                                        <br>
+                                        <div class="product-option color-option" style="background-color: red;">
+                                            <label> &nbsp;
+                                                <input type="radio" name="color" value="red" >
+                                            </label>
+                                        </div>
+                                        <div class="product-option active color-option" style="background-color: green;">
+                                            <label> &nbsp;
+                                                <input type="radio" name="color" value="green" checked>
+                                            </label>
+                                        </div><div class="product-option color-option" style="background-color: blue;">
+                                            <label> &nbsp;
+                                                <input type="radio" name="color" value="blue">
+                                            </label>
+                                        </div><div class="product-option color-option" style="background-color: orange;">
+                                            <label> &nbsp;
+                                                <input type="radio" name="color" value="orange">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!--end of the colors-->
+                                </div>
+
+                                <!--quantity-->
+                                <div class="row product-quantity clearfix">
+                                    <div class="col-12">
+                                        <div class="float-left label">
+                                            required quantity : 
+                                        </div>
+                                        <div class="float-left">
+                                            <select name="quantity" id="" class="form-control custom-form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end of the quantity-->
+
+                                <!--buttom-->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-lg btn-primary custom-btn custom-btn-primary2 custom-btn-with-icon">
+                                            <span class="clearfix">
+                                                <span class="float-left">add to cart</span>
+                                                <span class="float-right"><i class="fa fa-cart-plus fa-lg"></i></span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--end of the buttom -->
+
+                            </form>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+                    <!--description-->
+                    <div class="row more-description">
+                        <div class="col-12">
+                            <h3 class="custom-heading heading-with-border-bottom heading-inline">Description</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo nam quod eos nemo, animi aliquid.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                <li>Lorem ipsum </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end of more description section-->
+
+
+                    <!--comments-->
+                    <div class="row">
+                        <div class="comments block-100">
+                            <h3 class="custom-heading heading-with-border-bottom heading-inline">Comments</h3>
+                            
+                            <div class="borders-between">
+                                <div class="row">
+                                    <div class="media">
+                                        <img class="media-object media-left" src="../images/profile picture.jpg" alt="profile picture">
+                                        <div class="media-body">
+                                            <h4 class="media-heading">hammad</h4>
+                                            <div class="rating">
+                                                <i class="fa fa-star active"></i>
+                                                <i class="fa fa-star active"></i>
+                                                <i class="fa fa-star active"></i>
+                                                <i class="fa fa-star active"></i>
+                                                <i class="fa fa-star "></i>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, voluptate.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="media">
+                                        <img src="../images/profile picture2.jpg" alt="profile picture2" class="media-object media-left">
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Yassin mohamed</h4>
+                                            <div class="rating">
+                                                <i class="fa fa-star active"></i>
+                                                <i class="fa fa-star active"></i>
+                                                <i class="fa fa-star active"></i>
+                                                <i class="fa fa-star active"></i>
+                                                <i class="fa fa-star active"></i>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, possimus ex.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--end of comments-->
+
+                    <div class="row suggestions">
+                        <h3 class="custom heading col-sm-12 ">We recommend</h3>
+                    </div>
+
+
+                    
+                    <!--products-->
+                    <div class="pr ">
+                        <!--بداية منتج-->
+                        <div class="col-lg-3 col-md-4 d-none d-lg-block ">
+                            <div class="card custom-thumbnail">
+                                <div class="sale">50%</div>
+                                <div class="overlay">
+                                    <button data-add-to-cart=""  class="btn custom-btn btn-secondary add-to-cart-btn">                        <i class="fas fa-shopping-cart"></i>
+                                        add to cart</button>
+                                </div>
+                                <img src="../images/tshirt.jpg" alt="h&m">
+                                <div class="card-body">
+                                <div class="clearfix">
+                                            <h4 class="float-left">JEEP offroad </h4>
+                                            <div class="price float-right">199$</div>
+                                            </div>
+                                            <div class="clearfix">
+                                            <div class="rating float-left">
+                                                <i class="fa fa-star active"></i>
+                                                <i class="fa fa-star active"></i>
+                                                <i class="fa fa-star active"></i>
+                                                <i class="fa fa-star active"></i>
+                                                <i class="fa fa-star active"></i>
+                                            </div>
+                                            <button class="float-right btn btn-default custom-btn add-to-cart-btn d-block d-lg-none" data-add-to-cart="">add to cart <i class="fa fa-cart-plus"></i></button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--نهاية منتج-->
+
+                        <!--بداية منتج-->
+                        <div class="col-lg-3 col-md-4 "> 
+                            <div class="card custom-thumbnail">
+                                <div class="overlay">
+                                    <button data-add-to-cart="" class="btn custom-btn btn-secondary add-to-cart-btn">                        <i class="fas fa-shopping-cart"></i>
+                                    add to cart</button>
+                                </div>
+                                <img src="../images/most_sold_3.jpg" alt="h&m">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">h&m JACKET</h4>
+                                        <div class="price float-right">200$</div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="rating float-left">
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        </div>
+                                        <button class="float-right btn btn-default custom-btn add-to-cart-btn d-block d-lg-none" data-add-to-cart="">add to cart <i class="fa fa-cart-plus"></i></button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     <!--نهاية منتج-->
+
+                     <!--بداية منتج-->
+                        <div class="col-lg-3 col-md-4">
+                            <div class="card custom-thumbnail">
+                                <div class="overlay">
+                                    <button data-add-to-cart="" class="btn custom-btn btn-secondary add-to-cart-btn">                        <i class="fas fa-shopping-cart"></i>
+                                    add to cart</button>
+                                </div>
+                                <img src="../images/polo_1.jpg" alt="h&m">
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <h4 class="float-left">POLO T-SHIRT</h4>
+                                    <div class="price float-right">20$</div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="rating float-left">
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    </div>
+                                    <button class="float-right btn btn-default custom-btn add-to-cart-btn d-block d-lg-none" data-add-to-cart="">add to cart <i class="fa fa-cart-plus"></i></button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--نهاية منتج-->
+
+                        <!--بداية منتج-->
+                        <div class="col-lg-3 col-md-4" >
+                            <div class="card custom-thumbnail">
+                                <div class="overlay">
+                                    <button data-add-to-cart="" class="btn custom-btn btn-secondary add-to-cart-btn">                        <i class="fas fa-shopping-cart"></i>
+                                        add to cart</button>
+                                </div>
+                                <img src="../images/polo_2.jpg" alt="h&m">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <h4 class="float-left">POLO  T-SHIRT</h4>
+                                        <div class="price float-right">20$</div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="rating float-left">
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        <i class="fa fa-star active"></i>
+                                        </div>
+                                        <button class="float-right btn btn-default custom-btn add-to-cart-btn d-block d-lg-none" data-add-to-cart="">add to cart <i class="fa fa-cart-plus"></i></button>
+
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                      <!--نهاية منتج-->
+                    </div>
+
+
+
+                </div>
+            </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+          <!--footer 1-->
+          <div id="footer" class="row">
+            <div id="brand-logos" class="col-12 text-center">
+                <span>Omar Union Store is Authorized Agent for the biggest international corporations </span>
+                <div class="img-container">
+                    <img src="../images/lacoste.png" alt="lacoste">
+                    <img src="../images/polo.png" alt="polo">
+                    <img src="../images/puma.png" alt="puma">
+                    <img src="../images/adidas.png" alt="adidas">
+                </div>
+            </div>
+            <!--footer2-->
+            <div id="footer-nav">
+                <div class="container-fluid text-center">
+                    <div class="footer-logo">
+                       <a href="." > <img src="../images/footerlogo.png" alt="logo"> </a>
+                    </div>
+                    <div id="footer-nav-links" class="col-12 d-md-block d-none ">
+                        <a href=".">main page</a>
+                        <a href="../search.html">advanced search</a>
+                        <a href="../contact.html">contact us</a>
+                    </div>
+                    <div id="newsletter" class="col-6 offset-3">
+                        <form action="" class="form">
+                            <label for="footer-email">
+                                subscribe in our atom service
+                            </label>
+                            <br>
+                            <div class="input-group">
+                                <input class="form-control custom-form-control" type="email" id="footer-email" placeholder="email address" name="email" required>
+                                <div class="input-group-btn">
+                                    <button type="submit" class="btn btn-primary custom-btn custom-btn-primary2">subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+     
+                </div>
+            </div>
+            <!--footer3-->
+            <div id="footer-copyright-social" class="col-12">
+                <div class="container">
+                    <div class="clearfix">
+                        <div id="copyright" class="float-right">
+                            all rights reserved to Omar Union Store &copy;2020
+                        </div>
+                        <div id="social-icons" class="float-left">
+                            <a href="https://www.facebook.com/profile.php?id=100008350684127" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/omarabdalla671/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:omarwork671@gmail.com" target="_blank">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+          <!--end of the footer-->
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="../js/jquery-slim.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.js"></script> 
+<script src="../js/main.js"></script>
+</body>
+</html>

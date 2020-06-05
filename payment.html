@@ -1,0 +1,355 @@
+<!DOCTYPE html><script src="//localhost:35729/livereload.js?snipver=1" async="" defer=""></script>
+<html lang="en" dir="ltr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="shortcut icon" href="images/shortcut.jpeg">
+
+    
+</head>
+
+
+<body>
+
+    
+    <div class="container-fluid">
+
+        <!--header-->
+        <div class="row">
+         <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container" >
+                <div class="navbar-header">
+                    <button class="collapsed navbar-toggler btn custom-btn btn-icon" data-toggle="collapse" data-target="#navbar-collapsed-menu" ><i class=" fa fa-bars"></i></button>
+                    <a href="checkbox.html" class="navbar-toggler btn custom-btn btn-icon"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="main.html" class="navbar-brand ">
+                    <img src="images/a.png" alt="Omar Union store">
+                    </a>
+                </div>
+                <form  class="form-inline ">
+                    <input type="search" class="form-control custom-form-control" placeholder="search by name ..">
+                    <div class="dropdown categories">
+                        <a class="nav-link dropdown-toggle custom-btn" href="#" id="navbardropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            category
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown-menu">
+                            <li>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="search-category" value="men">men </label>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="search-category" value="women">women </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="search-category" value="kids">kids </label>
+                                </div>
+                            </li>
+                        </ul>
+                            
+                    </div>
+                    <button class="btn custom-btn-primary" type="submit" >search</button>
+                </form>
+                <div class="navbar-collapse collapse" id="navbar-collapsed-menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item "><a class="nav-link" href="main.html">Main Page</a></li>
+                        <li class="nav-item dropdown"><a id="navbarDropdown" role="button" aria-expanded="false" data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Store </a>
+                        <ul class="dropdown-menu custom-dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Men</a></li>
+                            <li><a class="dropdown-item" href="#">Women</a></li>
+                            <li><a class="dropdown-item" href="#">Kids</a></li>
+
+                        </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="search.html">Advanced Search</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                        <li class="d-none d-lg-block"><a href="checkout.html" id="btn-shopping-cart" class=" btn custom-btn btn-icon" title="shopping cart" data-toggle="tooltip" data-placement="bottom"> <!--data-placement خاصية التنسيق-->
+                            <i class="fas fa-shopping-cart"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+         </nav>
+        </div>
+
+
+         <!--breadcrumb-->
+        <div class="container">
+            <div class="row">
+                <ol class="breadcrumb custom-breadcrumb">
+                    <li><a href="main.html">main page</a></li>
+                    <li><a href="checkout.html">shopping cart</a></li>
+                    <li><a class="active" href="payment.html">payment</a></li>
+                </ol>
+            </div>
+        </div>
+        <!--end of breadcrumb-->
+
+        <!--payment form-->
+        <form action="" id="form-checkout">
+            <div class="row">
+                <!--personal information-->
+                <div class="col-12 col-lg-6  go-right-1">
+                    <h3 class="custom-heading">personal information</h3>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="first-name" id="" class="form-control custom-form-control input-lg custom-input-lg" placeholder="first name" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="second-name" id="" class="form-control custom-form-control input-lg custom-input-lg" placeholder="second name" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="email" name="email" id="" class="form-control custom-form-control  custom-input-lg" placeholder="email adress" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="location" id="" class="form-control custom-form-control input-lg custom-input-lg" placeholder="location" required>
+                        </div>
+                        <div class="col-md-6 form-group"> 
+                            <select name="country" class="form-control custom-form-control input-lg custom-input-lg">
+                                <option value="" disabled selected>select country</option>
+                                <option value="sa">Saudi Arabia</option>
+                                <option value="eg">Egypt</option>
+                                <option value="ae">United Arab Emirates</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <select name="city" id="" class="form-control custom-form-control input-lg custom-input-lg">
+                                <option value="" selected disabled>city</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="number" id="" class="form-control custom-form-control input-lg custom-input-lg" placeholder="phone number" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="apartment" id="" class="form-control custom-form-control input-lg custom-input-lg" placeholder="apartment number" required>
+                        </div>
+                    </div>
+                </div>
+                <!--payment information-->
+                <div class="col-12 col-lg-5  go-right" >
+                    <h3 class="custom-heading">payment information</h3>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label class="font-weight-bold">
+                            <input type="radio" name="payment_method" value="credit_card" checked>
+                            credit card
+                            </label>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label class="font-weight-bold">
+                                <input type="radio" name="payment_method" value="on_delivery" checked>
+                                on delivery
+                            </label>
+                        </div>
+                    </div>
+                    <!--credit card-->
+                    <div class="row" id="credit-card-info">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="credit_card_number" placeholder="credit number" required class="form-control custom-form-control input-lg custom-input-lg">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="number" name="credit_card_expiration_month" placeholder="expiration month" required class="form-control custom-form-control input-lg custom-input-lg" min="1" max="12">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="number"  name="credit_card_expiration_year" placeholder="expiration year" required class="form-control custom-form-control input-lg custom-input-lg">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="number" name="cvv" placeholder="CVV" required class="form-control custom-form-control input-lg custom-input-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+          <!--shopping cart-->
+          <div class="row borders-between">
+            <h3 class="custom-heading3">your order</h1>
+            <form  id="form-checkout">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>product</th>
+                            <th>price</th>
+                            <th> quantatiy</th>
+                            <th class="hide-on-small">price </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-product-info data-product-price="40">
+                            <td>
+                                <div class="media custom-media">
+                                    <div class="media-left d-none d-md-block">
+                                        <img class="media-object" src="images/adidas_3.jpg" alt="adidas_3">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">adidas</h4>
+                                        <div class="custom-text-muted">men clothes</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>40$</td>
+                            <td>
+                                <select name="quantity[0]" class="form-control custom-form-control select-inline quantity" data-product-quantity>
+                                    <option value="1" >1</option>
+                                    <option value="2" >2</option>
+                                    <option value="3" selected>3</option>
+                                </select>
+                            </td>
+                            <td class="total-price-for-product hide-on-small">120$</td>
+                            <td>
+                                <button class="btn custom-btn btn-danger" data-remove-from-cart>
+                                    <span class="d-none d-md-block">delete</span>
+                                    <i class="fa fa-trash-alt d-block d-md-none"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr data-product-info data-product-price="50">
+                            <td>
+                                <div class="media custom-media">
+                                    <div class="media-left d-none d-md-block">
+                                        <img class="media-object" src="images/adidas_4.jpg" alt="adidas_4">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="media-heading">adidas</div>
+                                        <span>women clothes</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td >50$</td>
+                            <td>
+                                <select name="quantity[1]" class="form-control custom-form-control select-inline quantity" data-product-quantity>
+                                    <option value="1" >1</option>
+                                    <option value="2" selected>2</option>
+                                    <option value="3" >3</option>
+                                </select>
+                            </td>
+                            <td class="total-price-for-product hide-on-small">100$</td>
+                            <td>
+                                <button class="btn custom-btn btn-danger" data-remove-from-cart>
+                                    <span class="d-none d-md-block">delete</span>
+                                    <i class="fa fa-trash-alt d-block d-md-none"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">
+                                <span class="cust6om-text-muted">
+                                        <span class="custom-text-muted">
+                                            price :
+                                        </span>
+                                            
+                                        <span id="total-price-for-all-products"> 150  </span> 
+                                </span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <a href="payment.html">                  
+                    <button type="submit" class="btn custom-btn btn-primary custom-btn-primary2 custom-btn-with-icon btn-lg" >
+                        <span class="clearfix">
+                            <span class="float-left">
+                                continue to check out
+                            </span>
+                            <span class="float-right">
+                            &nbsp;  <i class="fas fa-dollar-sign"></i>                                  </span>
+                        </span>
+                    </button>
+                </a>
+            </form>
+        </div>
+
+
+
+        
+        <!--footer 1-->
+        <div id="footer" class="row">
+            <div id="brand-logos" class="col-12 text-center">
+                <span>Omar Union Store is Authorized Agent for the biggest international corporations </span>
+                <div class="img-container">
+                    <img src="images/lacoste.png" alt="lacoste">
+                    <img src="images/polo.png" alt="polo">
+                    <img src="images/puma.png" alt="puma">
+                    <img src="images/adidas.png" alt="adidas">
+                </div>
+            </div>
+            <!--footer2-->
+            <div id="footer-nav">
+                <div class="container-fluid text-center">
+                    <div class="footer-logo">
+                       <a href="." > <img src="images/footerlogo.png" alt="logo"> </a>
+                    </div>
+                    <div id="footer-nav-links" class="col-12 d-md-block d-none ">
+                        <a href=".">main page</a>
+                        <a href="search.html">advanced search</a>
+                        <a href="contact.html">contact us</a>
+                    </div>
+                    <div id="newsletter" class="col-6 offset-3">
+                        <form action="" class="form">
+                            <label for="footer-email">
+                                subscribe in our atom service
+                            </label>
+                            <br>
+                            <div class="input-group">
+                                <input class="form-control custom-form-control" type="email" id="footer-email" placeholder="email address" name="email" required>
+                                <div class="input-group-btn">
+                                    <button type="submit" class="btn btn-primary custom-btn custom-btn-primary2">subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+     
+                </div>
+            </div>
+            <!--footer3-->
+            <div id="footer-copyright-social" class="col-12">
+                <div class="container">
+                    <div class="clearfix">
+                        <div id="copyright" class="float-right">
+                            all rights reserved to Omar Union Store &copy;2020
+                        </div>
+                        <div id="social-icons" class="float-left">
+                            <a href="https://www.facebook.com/profile.php?id=100008350684127" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/omarabdalla671/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:omarwork671@gmail.com" target="_blank">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div> 
+
+
+<script src="js/jquery-slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script> 
+<script src="js/main.js"></script>
+
+
+</body>
+
+
+</html>
